@@ -1,0 +1,65 @@
+.mainDiv
+{
+	height: 100vh;
+	width: 100vw;
+	background-color: #F4F7F8;
+  font-family: Roboto !important;
+}
+
+/*#1ABC9C*/
+.dateForm,
+.displayTime
+{
+	background-color: #fff;
+	border-radius: 3px;
+}
+
+.md-datepicker-input-container
+{
+	width: 76%;
+}
+
+.dateLabel
+{
+	margin-top: 20px;
+}
+
+.recentDate
+{
+	margin-bottom: 20px;
+}
+
+md-toolbar
+{
+	min-height: 55px !important;
+	border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.md-toolbar-tools
+{
+	font-size: 19px !important;
+	height: 55px !important;
+    max-height: 55px !important;
+}
+
+md-datepicker
+{
+	margin-top: 20px;
+}
+
+#submitDate
+{
+	margin-bottom: 20px !important;
+	margin-top: 20px !important;
+}
+
+.loaderDiv
+{
+	height: 100vh;
+}
+
+.displayTime
+{
+	display: none;
+}

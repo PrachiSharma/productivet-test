@@ -1,0 +1,14 @@
+{
+  "name": "slinkd_server_example",
+  "version": "0.0.1",
+  "author": "Prachi Sharma",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "*",
+    "express": "*",
+    "mongodb": "^2.2.21"
+  }
+}

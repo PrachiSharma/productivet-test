@@ -1,0 +1,36 @@
+<div layout="row" layout-align='center center' class='mainDiv'>
+
+	<div flex='50' layout="row" layout-align='center center'>
+		<form name='dateForm' flex="60" layout="row" layout-align="center center" layout-wrap class="md-whiteframe-1dp dateForm">
+			<md-toolbar flex='100' md-scroll-shrink class='toolBar'>
+                <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                  <h3>
+                    <span>Select Date</span>
+                  </h3>
+                </div>
+            </md-toolbar>
+
+			<md-datepicker ng-model="myDate" md-placeholder="Enter date" flex='80' required></md-datepicker>
+			<md-button class="md-raised md-primary" ng-disabled="dateForm.$invalid" id='submitDate' ng-click='submitDate()'>submit</md-button>
+		</form>
+	</div>
+	<div flex='50' layout="row" layout-align='center center' layout-wrap>
+		<div class="loaderDiv" layout="row" layout-align='center center' flex='100'>
+			<img src='images/loader.gif' height="40" width="40"/>
+		</div>
+
+		<div flex='60' layout="row" layout-align='center center' layout-wrap class='displayTime md-whiteframe-1dp'>
+		  	<div flex='65' class='dateLabel'>Recent date is:</div>
+		  	<div flex='65' class="recentDate">{{disDate}}</div>
+
+		  	<md-input-container flex='65'>
+		        <label>Select time zone</label>
+		        <md-select ng-model="tmZnsVal">
+		            <md-option ng-value="tm.offset" ng-repeat="tm in tmZns">{{tm.text}}</md-option>
+		        </md-select>
+		    </md-input-container>
+
+		</div>
+	</div>
+
+</div>
