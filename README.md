@@ -1,6 +1,7 @@
-# Market Spider App
+# Productivet-test
 
-* Angular Meteor 
+* Angular Js 
 * Angular material 
 * UI Router
+* NodeJs
 
