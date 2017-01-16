@@ -56,7 +56,7 @@ app.get('/timezones', function(req, res) {
   });
 });
 
-//to get recent time
+//to get recent date
 app.get('/recentDate', function(req, res) {
 
   MongoClient.connect(url, function(err, db) {
@@ -81,7 +81,7 @@ app.get('/recentDate', function(req, res) {
   });
 });
 
-//add a doctor details in user table and automatic login
+//insert new date
 app.post("/addDate",function(req,res){
 
 	//parse date sent by an user
@@ -97,7 +97,7 @@ app.post("/addDate",function(req,res){
 		   //if error occured while adding data
 		   if(err != null)
 		   {
-		     //if an error occured while creating to the server
+		     //if an error occured while connecting to the server
 		     res.send({
 		      "status": "FAIL",
 		      "statusCode": 403,
@@ -107,9 +107,8 @@ app.post("/addDate",function(req,res){
 		   }
 		   else
 		   {
-		    // var dID = result.insertedId;
 		     db.close();
-		     //doctor added successfully
+		     //date added successfully
 		     res.send({
 		      "status": "SUCCESS",
 		      "statusCode": 200,
