@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient
   , assert = require('assert');
 
-var url = 'mongodb://heroku_37nwdfzw:5a4fl9shpg86sk3qfelg62s4qg@ds023624.mlab.com:23624/heroku_37nwdfzw';
+var url = 'url';
 
 
 // Use connect method to connect to the Server
